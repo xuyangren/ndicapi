@@ -54,13 +54,33 @@ sudo make install
        ```powershell
        usbipd wsl attach --auto-attach --busid <BUSID>
        ```
-# 5.编译project文件夹下的文件
- 需要更改CMakeLists.txt文件夹下的set(NDI_FILE /home  这一行的path到NDI-master实际所在path
- 更改set( CMAKE_BUILD_TYPE "Debug" )到set( CMAKE_BUILD_TYPE "Release" )
- 然后
+# 5.编译project文件夹下的文件 
+需要更改CMakeLists.txt文件夹下的set(NDI_FILE /home  这一行的path到NDI-master实际所在path
+更改set( CMAKE_BUILD_TYPE "Debug" )到set( CMAKE_BUILD_TYPE "Release" )
+## 然后编译Sophus文件夹
+先解压压缩包，转到Sophus文件夹
  ``` shell
 mkdir build
 cd build/
 cmake ..
+make -j
+sudo make install
 ```
+**然后开始编译project文件夹下的文件** 转到 project文件夹
+ ``` shell
+mkdir build
+cd build/
+cmake ..
+make -j
+```
+# 6. 测试是否安装完好
+跳转到project\build下
+ ``` shell
+./MYSLAM
+```
+
+![image](https://github.com/user-attachments/assets/19b66a9f-b2ab-41e2-9783-0149d843b229)
+
+
+
  
