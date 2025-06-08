@@ -1,3 +1,7 @@
+# 0. 从 仓库克隆到本地时候在相应的文件夹下运行 
+```shell
+git clone https://github.com/xuyangren/ndicapi.git
+```
 # 1.配置USB串口
 将70-ttyusb.rules放到/etc/udev/rules.d/目录下，重新插入串口
 ```shell
