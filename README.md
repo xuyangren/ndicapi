@@ -31,8 +31,10 @@ sudo make install
 ```
 然后可以通过find_package 找到 ndicapi
 
-# 4.编译NDI-master  
-直接make
+# 4.编译NDI-master  在NDI-master文件夹下
+```sehll
+make
+```
 运行:
 ```sehll
 ./build/linux/capisample /dev/ttyUSB0 
