@@ -40,6 +40,7 @@ make
 ./build/linux/capisample /dev/ttyUSB0 
 ```
 ## 4.1 使用ttyUSB0的时候，如果是在wsl系统中运行，需要先穿过Windows系统绑定usb
+**每次使用前都需要附加设备，但是绑定设备有时候一次就可**
 1 **列出和绑定 USB 设备**：
    - 在 Windows 的 PowerShell（**以管理员身份运行**）中，列出所有 USB 设备：
      ```powershell
