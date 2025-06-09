@@ -24,6 +24,7 @@ sudo make install
 # 3.这里有两个API版本，先编译ndicapi-master，在该文件夹下运行:
 ```sehll
 mkdir build
+cd build
 cmake ..
 make -j  
 sudo make install
