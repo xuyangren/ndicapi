@@ -56,7 +56,7 @@ make
 2. **将 USB 设备附加到 WSL2**：
    - 附加设备到 WSL：
      ```powershell
-     usbipd attach --busid <BUSID>
+       usbipd attach --wsl --busid <BUSID>
      ```
      - 如果需要自动附加，可以使用：
        ```powershell
